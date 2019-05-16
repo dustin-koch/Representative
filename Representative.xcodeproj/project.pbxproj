@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CAE6946B228DF3810013001F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE6946A228DF3810013001F /* AppDelegate.swift */; };
-		CAE6946D228DF3810013001F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE6946C228DF3810013001F /* ViewController.swift */; };
 		CAE69470228DF3810013001F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE6946E228DF3810013001F /* Main.storyboard */; };
 		CAE69472228DF3810013001F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE69471228DF3810013001F /* Assets.xcassets */; };
 		CAE69475228DF3810013001F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE69473228DF3810013001F /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		CAE69467228DF3810013001F /* Representative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Representative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE6946A228DF3810013001F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CAE6946C228DF3810013001F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CAE6946F228DF3810013001F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAE69471228DF3810013001F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAE69474228DF3810013001F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,21 @@
 		CAE69469228DF3810013001F /* Representative */ = {
 			isa = PBXGroup;
 			children = (
-				CAE6946A228DF3810013001F /* AppDelegate.swift */,
-				CAE6946C228DF3810013001F /* ViewController.swift */,
 				CAE6946E228DF3810013001F /* Main.storyboard */,
+				CAE6947C228DF39C0013001F /* Resources */,
+			);
+			path = Representative;
+			sourceTree = "<group>";
+		};
+		CAE6947C228DF39C0013001F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CAE6946A228DF3810013001F /* AppDelegate.swift */,
 				CAE69471228DF3810013001F /* Assets.xcassets */,
 				CAE69473228DF3810013001F /* LaunchScreen.storyboard */,
 				CAE69476228DF3820013001F /* Info.plist */,
 			);
-			path = Representative;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,7 +140,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAE6946D228DF3810013001F /* ViewController.swift in Sources */,
 				CAE6946B228DF3810013001F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,7 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Representative/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Representative/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +304,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Representative/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Representative/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
