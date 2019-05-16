@@ -11,6 +11,11 @@
 		CAE69470228DF3810013001F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE6946E228DF3810013001F /* Main.storyboard */; };
 		CAE69472228DF3810013001F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE69471228DF3810013001F /* Assets.xcassets */; };
 		CAE69475228DF3810013001F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE69473228DF3810013001F /* LaunchScreen.storyboard */; };
+		CAE6947E228DF50B0013001F /* StateListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE6947D228DF50B0013001F /* StateListTableViewController.swift */; };
+		CAE69481228DF5460013001F /* Representative.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE69480228DF5460013001F /* Representative.swift */; };
+		CAE69484228DF7EA0013001F /* RepresentativeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE69483228DF7EA0013001F /* RepresentativeController.swift */; };
+		CAE69487228DF8430013001F /* StateDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE69486228DF8430013001F /* StateDetailTableViewController.swift */; };
+		CAE69489228DF8D80013001F /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE69488228DF8D80013001F /* States.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		CAE69471228DF3810013001F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAE69474228DF3810013001F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAE69476228DF3820013001F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAE6947D228DF50B0013001F /* StateListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateListTableViewController.swift; sourceTree = "<group>"; };
+		CAE69480228DF5460013001F /* Representative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Representative.swift; sourceTree = "<group>"; };
+		CAE69483228DF7EA0013001F /* RepresentativeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeController.swift; sourceTree = "<group>"; };
+		CAE69486228DF8430013001F /* StateDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDetailTableViewController.swift; sourceTree = "<group>"; };
+		CAE69488228DF8D80013001F /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				CAE6946E228DF3810013001F /* Main.storyboard */,
+				CAE69485228DF7F00013001F /* Model Controllers */,
+				CAE69482228DF5490013001F /* Models */,
+				CAE6947F228DF5140013001F /* View Controllers */,
 				CAE6947C228DF39C0013001F /* Resources */,
 			);
 			path = Representative;
@@ -67,6 +80,32 @@
 				CAE69476228DF3820013001F /* Info.plist */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		CAE6947F228DF5140013001F /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CAE6947D228DF50B0013001F /* StateListTableViewController.swift */,
+				CAE69486228DF8430013001F /* StateDetailTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		CAE69482228DF5490013001F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CAE69480228DF5460013001F /* Representative.swift */,
+				CAE69488228DF8D80013001F /* States.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CAE69485228DF7F00013001F /* Model Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CAE69483228DF7EA0013001F /* RepresentativeController.swift */,
+			);
+			path = "Model Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAE6946B228DF3810013001F /* AppDelegate.swift in Sources */,
+				CAE6947E228DF50B0013001F /* StateListTableViewController.swift in Sources */,
+				CAE69484228DF7EA0013001F /* RepresentativeController.swift in Sources */,
+				CAE69489228DF8D80013001F /* States.swift in Sources */,
+				CAE69487228DF8430013001F /* StateDetailTableViewController.swift in Sources */,
+				CAE69481228DF5460013001F /* Representative.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
