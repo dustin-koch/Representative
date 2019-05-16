@@ -37,11 +37,11 @@ class RepresentativeController {
                 completion([])
                 return
             }
-            guard let data = data, let responseDataString = String(data: data, encoding: .ascii), let dataAsUTF = responseDataString.data(using: .utf8) else { completion([]); return }
+            guard let data = data,
+                let responseDataString = String(data: data, encoding: .ascii),
+                let dataAsUTF = responseDataString.data(using: .utf8) else { completion([]); return }
             let jsonDecoder = JSONDecoder()
-            
-            
-            
+
             do {
                 let topLevelJSON = try jsonDecoder.decode(TopLevelJSONDictionary.self, from: dataAsUTF)
                 let results = topLevelJSON.results

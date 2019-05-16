@@ -9,6 +9,9 @@
 import UIKit
 
 class StateDetailTableViewController: UITableViewController {
+    
+    //MARK: - Properties
+    var state: String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
