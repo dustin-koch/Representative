@@ -44,8 +44,6 @@ class StateListTableViewController: UITableViewController {
             let destinationVC = segue.destination as? StateDetailTableViewController
             let state = States.all[index]
             destinationVC?.state = state
+            }
         }
-    }
-
-
 }//END OF CLASS

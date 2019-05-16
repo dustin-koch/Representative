@@ -13,9 +13,6 @@ class RepresentativeController {
     //Singleton
     static let shared = RepresentativeController()
     
-    //Source of truth
-    var representatives: [Representative] = []
-    
     //MARK: - Properties
     let baseURL = "https://whoismyrepresentative.com/"
 

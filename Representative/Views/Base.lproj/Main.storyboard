@@ -59,14 +59,54 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="representativeCell" rowHeight="93" id="mK1-i3-lEt">
-                                <rect key="frame" x="0.0" y="28" width="414" height="93"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="representativeCell" rowHeight="133" id="mK1-i3-lEt" customClass="RepresentativeTableViewCell" customModule="Representative" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="133"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mK1-i3-lEt" id="a3c-O7-cVX">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="92.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="132.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="BTp-11-fC6">
+                                            <rect key="frame" x="28" y="19" width="358" height="95"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="8ri-jv-1UH">
+                                                    <rect key="frame" x="0.0" y="7" width="358" height="81.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(name)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Of7-cw-Li5">
+                                                            <rect key="frame" x="0.0" y="0.0" width="358" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(district)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qr0-AG-nlA">
+                                                            <rect key="frame" x="0.0" y="30.5" width="358" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(phone)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bcY-G6-2SK">
+                                                            <rect key="frame" x="0.0" y="61" width="358" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="BTp-11-fC6" firstAttribute="leading" secondItem="a3c-O7-cVX" secondAttribute="leadingMargin" constant="8" id="Vkd-ep-Ycl"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="BTp-11-fC6" secondAttribute="bottom" constant="8" id="mMP-tG-9bd"/>
+                                        <constraint firstItem="BTp-11-fC6" firstAttribute="top" secondItem="a3c-O7-cVX" secondAttribute="topMargin" constant="8" id="pBk-Df-z88"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="BTp-11-fC6" secondAttribute="trailing" constant="8" id="vCt-Ln-sbF"/>
+                                    </constraints>
                                 </tableViewCellContentView>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="districtLabel" destination="Qr0-AG-nlA" id="YcG-44-Rgd"/>
+                                    <outlet property="nameLabel" destination="Of7-cw-Li5" id="c8v-9M-xae"/>
+                                    <outlet property="phoneLabel" destination="bcY-G6-2SK" id="t3K-cp-JVZ"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>

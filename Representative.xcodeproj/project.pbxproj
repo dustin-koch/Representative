@@ -16,6 +16,7 @@
 		CAE69484228DF7EA0013001F /* RepresentativeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE69483228DF7EA0013001F /* RepresentativeController.swift */; };
 		CAE69487228DF8430013001F /* StateDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE69486228DF8430013001F /* StateDetailTableViewController.swift */; };
 		CAE69489228DF8D80013001F /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE69488228DF8D80013001F /* States.swift */; };
+		CAE6948B228E0C870013001F /* RepresentativeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE6948A228E0C870013001F /* RepresentativeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		CAE69483228DF7EA0013001F /* RepresentativeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeController.swift; sourceTree = "<group>"; };
 		CAE69486228DF8430013001F /* StateDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDetailTableViewController.swift; sourceTree = "<group>"; };
 		CAE69488228DF8D80013001F /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
+		CAE6948A228E0C870013001F /* RepresentativeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +64,7 @@
 		CAE69469228DF3810013001F /* Representative */ = {
 			isa = PBXGroup;
 			children = (
-				CAE6946E228DF3810013001F /* Main.storyboard */,
+				CAE6948C228E0C900013001F /* Views */,
 				CAE69485228DF7F00013001F /* Model Controllers */,
 				CAE69482228DF5490013001F /* Models */,
 				CAE6947F228DF5140013001F /* View Controllers */,
@@ -106,6 +108,15 @@
 				CAE69483228DF7EA0013001F /* RepresentativeController.swift */,
 			);
 			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		CAE6948C228E0C900013001F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CAE6946E228DF3810013001F /* Main.storyboard */,
+				CAE6948A228E0C870013001F /* RepresentativeTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAE6948B228E0C870013001F /* RepresentativeTableViewCell.swift in Sources */,
 				CAE6946B228DF3810013001F /* AppDelegate.swift in Sources */,
 				CAE6947E228DF50B0013001F /* StateListTableViewController.swift in Sources */,
 				CAE69484228DF7EA0013001F /* RepresentativeController.swift in Sources */,
